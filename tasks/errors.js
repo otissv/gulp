@@ -6,6 +6,7 @@
 // Error handler
 // =============================================================================
 var plumber = require('gulp-plumber');
+var gutil = require('gulp-util');
 
 module.exports = function (gulp) {
   var gulp_src = gulp.src;

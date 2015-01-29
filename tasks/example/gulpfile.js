@@ -20,6 +20,7 @@ require('./gulp/tasks/remove.js')(gulp);
 require('./gulp/tasks/move.js')(gulp);
 require('./gulp/tasks/sever-browser-sync.js')(gulp, config);
 require('./gulp/tasks/debug')(gulp);
+require('./gulp/tasks/sass.js')(gulp);
 
 // Watch files for changes
 gulp.task('watch', function () {
