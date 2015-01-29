@@ -8,7 +8,8 @@
 // =============================================================================
 var gulp = require('gulp');
 var gutil = require('gulp-util');
-var config = require('./gulp/ .config.js');
+var config = require('./gulp/config.js');
+
 
 // =============================================================================
 // Tasks
