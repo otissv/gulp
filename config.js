@@ -10,7 +10,6 @@
 // Configuration
 // =============================================================================
 var gutil = require('gulp-util');
-
 var isProduction = true;
 var sassStyle = 'compressed';
 var sourceMap = false;
@@ -21,31 +20,40 @@ if(gutil.env.dev === true) {
   isProduction = false;
 }
 
+var paths = {
+  backendDir: 'backend',
+  frontendDir: 'fronted',
+  staticDir : 'public',
+  testDir: 'test'
+};
+
 module.exports = {
   isProduction: false,
   host: 'localhost',
-  serverDir: './backend',
-  staticFiles: 'public/**/*.*',
-  testsFiles: './tests/**/*.js',
+  serverDir: './'  + paths.backendDir,
+  staticFiles: paths.staticDir + '/**/*.*',
+  testsFiles: './' + paths.testDir +'/**/*.js',
   ports: {
     server: 3000,
     test: 7358
   },
-  scripts: [
-    './gulpfile.js',
-    './frontend/*.js',
-    './backend/*.js',
-    './tests/**/*.js',
-    '!./node_modules/**/*.js'
-  ],
+  scripts: {
+    baseScript: './' + paths.frontendDir + '/js/main.js',
+    outputFile: './bundle.js',
+    dest: './' + paths.staticDir + '/js/',
+    src: [
+      './gulpfile.js',
+      './' + paths.frontendDir + '/**/*.js',
+      './' + paths.backendDir + '/**/*.js',
+      './' + paths.testDir + '/**/*.js',
+      '!./node_modules/**/*.js'
+    ]
+  },
   styles:{
-    src: './frontend/stylesheets/**/*.scss',
-    dest: './public/stylesheets/',
+    src: './frontend/styles/**/*.scss',
+    dest: './public/styles/',
     compressed: sassStyle,
     sourceMap: sourceMap
   },
   divider: '==============================================================',
-  stringReplace: function (str, find, replace) {
-    return str.replace(new RegExp(find, 'g'), replace);
-  }
 };
