@@ -1,4 +1,4 @@
-// gulp/nodeInspector.js
+// gulp/tasks/nodeInspector.js
 
 'use strict';
 

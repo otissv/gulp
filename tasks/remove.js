@@ -1,4 +1,4 @@
-// gulp/remove.js
+// gulp/tasks/remove.js
 
 'use strict';
 

@@ -1,4 +1,4 @@
-// gulp/browserSync.js
+// gulp/tasks/browserSync.js
 
 'use strict';
 

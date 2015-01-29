@@ -1,9 +1,9 @@
-// gulp/testem.js
+// gulp/tasks/testem.js
 
 'use strict';
 
 // =============================================================================
-// Remove directory
+// Test Runner
 // =============================================================================
 var testem = require('gulp-testem');
 

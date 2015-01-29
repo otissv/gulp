@@ -31,8 +31,6 @@ module.exports = {
     './tests/**/*.js',
     '!./node_modules/**/*.js'
   ],
-
-  testem: './tests/client/*.js',
   divider: '==============================================================',
   stringReplace: function (str, find, replace) {
     return str.replace(new RegExp(find, 'g'), replace);

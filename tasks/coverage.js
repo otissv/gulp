@@ -1,4 +1,4 @@
-// gulp/coverage.js
+// gulp/tasks/coverage.js
 
 'use strict';
 

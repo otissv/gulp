@@ -1,4 +1,4 @@
-// gulp/errors.js
+// gulp/tasks/errors.js
 
 'use strict';
 

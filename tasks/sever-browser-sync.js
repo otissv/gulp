@@ -1,4 +1,4 @@
-// gulp/nodemon.js
+// gulp/tasks/server-browser-sync.js
 
 'use strict';
 

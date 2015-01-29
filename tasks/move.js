@@ -1,4 +1,4 @@
-// gulp/move.js
+// gulp/tasks/move.js
 
 'use strict';
 
