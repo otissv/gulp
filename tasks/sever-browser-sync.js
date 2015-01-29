@@ -7,9 +7,8 @@
 // =============================================================================
 var nodemon = require('gulp-nodemon');
 var browserSync = require('browser-sync');
-var config = require('../config.js');
 
-module.exports = function (gulp) {
+module.exports = function (gulp, config) {
   var opts =  {
     script: config.serverDir + '/server.js',
     env:    { 'NODE_ENV': 'development' },

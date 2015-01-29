@@ -6,9 +6,8 @@
 
 var jshint = require('gulp-jshint');
 var jshintStylish = require('jshint-stylish');
-var config = require('../config.js');
 
-module.exports = function lintJs (gulp) {
+module.exports = function lintJs (gulp, config) {
   // Lint scripts
   gulp.task('lintJs', function () {
     return gulp.src(config.scripts)

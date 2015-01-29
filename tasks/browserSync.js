@@ -6,9 +6,8 @@
 // Sync Browsers
 // =============================================================================
 var browserSync = require('browser-sync');
-var config = require('../config.js');
 
-module.exports = function (gulp) {
+module.exports = function (gulp, config) {
   // Restart browser on file change
   gulp.task('browser-sync', function() {
     browserSync.init({

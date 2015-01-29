@@ -16,6 +16,7 @@ module.exports = {
   host: 'localhost',
   serverDir: './backend',
   staticFiles: 'public/**/*.*',
+  testsFiles: './tests/**/*.js',
   ports: {
     server: 3000,
     test: 7358
@@ -30,7 +31,7 @@ module.exports = {
     './tests/**/*.js',
     '!./node_modules/**/*.js'
   ],
-  tests: './tests/**/*.js',
+
   testem: './tests/client/*.js',
   divider: '==============================================================',
   stringReplace: function (str, find, replace) {

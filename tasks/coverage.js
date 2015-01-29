@@ -6,7 +6,7 @@
 // Test server
 // =============================================================================
 
-module.exports = function (gulp) {
+module.exports = function (gulp, config) {
   gulp.task('coverage', function () {
     var coverageServer = http.createServer(function (req, resp) {
       req.pipe(fs.createWriteStream('coverage.json'));
