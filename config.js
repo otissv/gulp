@@ -43,12 +43,12 @@ module.exports = {
     dest: './' + paths.staticDir + '/js/',
     jsx: './components/*.jsx',
     src: [
-      './gulpfile.js',
-      './' + paths.frontendDir + '/**/*.js',
-      './' + paths.backendDir + '/**/*.js',
-      './' + paths.testDir + '/**/*.js',
-      './components/*.jsx',
-      '!./node_modules/**/*.js'
+    './gulpfile.js',
+    './' + paths.frontendDir + '/**/*.js',
+    './' + paths.backendDir + '/**/*.js',
+    './' + paths.testDir + '/**/*.js',
+    './components/*.jsx',
+    '!./node_modules/**/*.js'
     ]
   },
   styles:{
